@@ -514,6 +514,9 @@ Variant* VariantParser<DoCheck>::parse(Variant* v) {
     parse_attribute("extinctionPieceTypes", v->extinctionPieceTypes, v->pieceToChar);
     parse_attribute("extinctionPieceCount", v->extinctionPieceCount);
     parse_attribute("extinctionOpponentPieceCount", v->extinctionOpponentPieceCount);
+    parse_attribute("kingTypes", v->kingType, v->pieceToChar);
+    // parse_attribute("kingTypesWhite", v->kingType[WHITE], v->pieceToChar);
+    // parse_attribute("kingTypesBlack", v->kingType[BLACK], v->pieceToChar);
     parse_attribute("flagPiece", v->flagPiece[WHITE], v->pieceToChar);
     parse_attribute("flagPiece", v->flagPiece[BLACK], v->pieceToChar);
     parse_attribute("flagPieceWhite", v->flagPiece[WHITE], v->pieceToChar);
